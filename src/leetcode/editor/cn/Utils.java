@@ -1,6 +1,5 @@
-package leetcode.editor.cn.utils;
+package leetcode.editor.cn;
 
-import leetcode.editor.cn.utils.ListNode;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 

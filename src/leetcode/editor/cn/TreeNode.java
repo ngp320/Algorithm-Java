@@ -1,4 +1,4 @@
-package leetcode.editor.cn.utils;
+package leetcode.editor.cn;
 
 /**
  * @ClassName: ListNode

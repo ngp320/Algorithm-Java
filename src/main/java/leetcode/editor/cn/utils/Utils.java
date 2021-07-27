@@ -1,4 +1,4 @@
-package leetcode.editor.cn;
+package leetcode.editor.cn.utils;
 
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -54,5 +54,25 @@ public class Utils {
         }
         return root;
     }
+    //生成一个随机数组
+    public static int[] generateRandomArray(int arrLength) {
+        int[] arr = new int[arrLength];
+        int randomNumber = (int) (Math.random() * 1000 + 1);//随机1-1000的整数
+        for (int i = 0; i < arrLength; i++) {
+            arr[i] = randomNumber;
+            randomNumber = (int) (Math.random() * 1000 + 1);
+        }
+        //printArr(arr);
+        return arr;
+    }
 
+    public static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (i == arr.length - 1) {
+                System.out.println(arr[i]);
+            } else {
+                System.out.print(arr[i] + ",");
+            }
+        }
+    }
 }

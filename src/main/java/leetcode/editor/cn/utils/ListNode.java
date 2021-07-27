@@ -1,4 +1,4 @@
-package leetcode.editor.cn;
+package leetcode.editor.cn.utils;
 
 /**
  * @ClassName: ListNode
@@ -15,7 +15,7 @@ public class ListNode {
         val = x;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
     }

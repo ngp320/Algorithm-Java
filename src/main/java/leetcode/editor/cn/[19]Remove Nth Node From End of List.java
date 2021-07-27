@@ -41,9 +41,8 @@
 
 package leetcode.editor.cn;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import leetcode.editor.cn.utils.ListNode;
+import leetcode.editor.cn.utils.Utils;
 
 //Java：Remove Nth Node From End of List
  class P19RemoveNthNodeFromEndOfList{

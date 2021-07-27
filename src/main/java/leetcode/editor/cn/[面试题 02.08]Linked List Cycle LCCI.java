@@ -29,6 +29,9 @@
 // 👍 78 👎 0
 
 package leetcode.editor.cn;
+
+import leetcode.editor.cn.utils.ListNode;
+
 //Java：Linked List Cycle LCCI
  class  LinkedListCycle {
     public static void main(String[] args) {

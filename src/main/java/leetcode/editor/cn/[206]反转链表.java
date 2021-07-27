@@ -45,6 +45,8 @@
 package leetcode.editor.cn;
 
 
+import leetcode.editor.cn.utils.ListNode;
+import leetcode.editor.cn.utils.Utils;
 
 //Java：反转链表
 class P206ReverseLinkedList{

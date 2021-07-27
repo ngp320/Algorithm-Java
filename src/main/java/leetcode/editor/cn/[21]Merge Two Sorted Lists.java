@@ -37,6 +37,9 @@
 
 package leetcode.editor.cn;
 
+import leetcode.editor.cn.utils.ListNode;
+import leetcode.editor.cn.utils.Utils;
+
 //Java：Merge Two Sorted Lists
 class P21MergeTwoSortedLists {
     public static void main(String[] args) {

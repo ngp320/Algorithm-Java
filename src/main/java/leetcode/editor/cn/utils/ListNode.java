@@ -3,8 +3,8 @@ package leetcode.editor.cn.utils;
 /**
  * @ClassName: ListNode
  * @Description: TODO
- * @Version: SVN∞Ê±æ∫≈
- * @Author: Ã∆∫∆
+ * @Version:
+ * @Author: ÂîêÊµ©
  * @Date: 2021/7/8 13:43
  */
 public class ListNode {

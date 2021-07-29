@@ -3,9 +3,9 @@ package leetcode.editor.cn.sort;
 
 /**
  * @ClassName: ShellSort
- * @Description: ×î¼òµ¥ĞòÁĞµÄ shell sort , Ö®ºó »¹ÓĞ 3*h+1
- * ºÜ¶àÓÅ»¯ËäÈ»Ğ´ÆğÀ´ºÜ¸´ÔÓ, µ«±³ºóµÄË¼ÏëÊÇºÜÓĞÒâË¼µÄ.
- * @Author: ÌÆºÆ
+ * @Description: æœ€ç®€å•åºåˆ—çš„ shell sort , ä¹‹å è¿˜æœ‰ 3*h+1
+ * å¾ˆå¤šä¼˜åŒ–è™½ç„¶å†™èµ·æ¥å¾ˆå¤æ‚, ä½†èƒŒåçš„æ€æƒ³æ˜¯å¾ˆæœ‰æ„æ€çš„.
+ * @Author: å”æµ©
  * @Date: 2021/7/26 16:55
  */
 public class ShellSort {
@@ -14,11 +14,11 @@ public class ShellSort {
         int length = arr.length;
         int temp;
         for (int gap = length / 2; gap > 0; gap /= 2) {
-            // ÒÔÏÂ²¿·ÖÎª²åÈëÅÅĞò
+            // ä»¥ä¸‹éƒ¨åˆ†ä¸ºæ’å…¥æ’åº
             for (int i = gap; i < length; i++) {
-                //Ñ°ÕÒÔªËØarr[i]ºÏÊÊµÄ²åÈëÎ»ÖÃ
+                //å¯»æ‰¾å…ƒç´ arr[i]åˆé€‚çš„æ’å…¥ä½ç½®
                 temp = arr[i];
-                int j = i - gap; // j±£´æÔªËØeÓ¦¸Ã²åÈëµÄÎ»ÖÃ
+                int j = i - gap; // jä¿å­˜å…ƒç´ eåº”è¯¥æ’å…¥çš„ä½ç½®
                 for (; j >= 0 && arr[j] > temp; j -= gap) {
                     arr[j + gap] = arr[j];
                 }
@@ -29,7 +29,7 @@ public class ShellSort {
 
     }
 
-     //ºÃÏñ±ÈÆÕÍ¨ shellsort, ÊÇÄÜÊ¡ 1/3 µÄÊ±¼ä
+     //å¥½åƒæ¯”æ™®é€š shellsort, æ˜¯èƒ½çœ 1/3 çš„æ—¶é—´
      static void shellSort_3hAdd1(int[] arr) {
         int length = arr.length;
         int temp;
@@ -38,11 +38,11 @@ public class ShellSort {
             gap = gap * 3 + 1;
         }
         while (gap > 0) {
-            // ÒÔÏÂ²¿·ÖÎª²åÈëÅÅĞò
+            // ä»¥ä¸‹éƒ¨åˆ†ä¸ºæ’å…¥æ’åº
             for (int i = gap; i < length; i++) {
-                //Ñ°ÕÒÔªËØarr[i]ºÏÊÊµÄ²åÈëÎ»ÖÃ
+                //å¯»æ‰¾å…ƒç´ arr[i]åˆé€‚çš„æ’å…¥ä½ç½®
                 temp = arr[i];
-                int j = i - gap; // j±£´æÔªËØeÓ¦¸Ã²åÈëµÄÎ»ÖÃ
+                int j = i - gap; // jä¿å­˜å…ƒç´ eåº”è¯¥æ’å…¥çš„ä½ç½®
                 for (; j >= 0 && arr[j] > temp; j -= gap) {
                     arr[j + gap] = arr[j];
                 }

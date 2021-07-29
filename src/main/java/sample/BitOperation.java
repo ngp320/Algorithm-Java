@@ -5,7 +5,7 @@ import java.util.Collections;
 
 /**
  * @ClassName: BitOperation
- * @Author: ÌÆºÆ
+ * @Author: å”æµ©
  * @Date: 2021/7/23 11:15
  */
 public class BitOperation {
@@ -22,9 +22,9 @@ public class BitOperation {
         String bi_c = Integer.toBinaryString(c);
 
         System.out.println(z);
-        System.out.println(a);//½á¹ûÊÇ0
-        System.out.println(b);//½á¹ûÊÇ-1
-        System.out.println(c);//½á¹ûÊÇ536870911
+        System.out.println(a);//ç»“æœæ˜¯0
+        System.out.println(b);//ç»“æœæ˜¯-1
+        System.out.println(c);//ç»“æœæ˜¯536870911
         System.out.println(String.join("", Collections.nCopies(32, "-")));
         System.out.println(bi_z);
         System.out.println(bi_a);

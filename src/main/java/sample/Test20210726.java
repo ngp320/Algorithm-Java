@@ -6,8 +6,8 @@ import leetcode.editor.cn.utils.Timer;
 /**
  * @ClassName: Test20210726
  * @Description:
- * @Version: SVN∞Ê±æ∫≈
- * @Author: Ã∆∫∆
+ * @Version:
+ * @Author: ÂîêÊµ©
  * @Date: 2021/7/26 16:55
  */
 public class Test20210726 {

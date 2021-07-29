@@ -4,11 +4,11 @@ package leetcode.editor.cn.utils;
  * @ClassName: printarr
  * @Description: TODO
  * @Version:
- * @Author: ÌÆºÆ
+ * @Author: å”æµ©
  * @Date: 2021/7/28 16:31
  */
 public class printArray {
-    // ´òÓ¡arrÊı×éµÄËùÓĞÄÚÈİ
+    // æ‰“å°arræ•°ç»„çš„æ‰€æœ‰å†…å®¹
      static void printArray(Object[] arr) {
 
         for (int i = 0; i < arr.length; i++){

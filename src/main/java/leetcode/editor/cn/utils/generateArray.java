@@ -4,17 +4,17 @@ package leetcode.editor.cn.utils;
  * @ClassName: gen
  * @Description: TODO
  * @Version:
- * @Author: ÌÆºÆ
+ * @Author: å”æµ©
  * @Date: 2021/7/28 16:30
  */
 public class generateArray {
 
 
-    // Éú³ÉÒ»¸ö½üºõÓĞĞòµÄÊı×é
-    // Ê×ÏÈÉú³ÉÒ»¸öº¬ÓĞ[0...n-1]µÄÍêÈ«ÓĞĞòÊı×é, Ö®ºóËæ»ú½»»»swapTimes¶ÔÊı¾İ
-    // swapTimes¶¨ÒåÁËÊı×éµÄÎŞĞò³Ì¶È:
-    // swapTimes == 0 Ê±, Êı×éÍêÈ«ÓĞĞò
-    // swapTimes Ô½´ó, Êı×éÔ½Ç÷ÏòÓÚÎŞĞò
+    // ç”Ÿæˆä¸€ä¸ªè¿‘ä¹æœ‰åºçš„æ•°ç»„
+    // é¦–å…ˆç”Ÿæˆä¸€ä¸ªå«æœ‰[0...n-1]çš„å®Œå…¨æœ‰åºæ•°ç»„, ä¹‹åéšæœºäº¤æ¢swapTimeså¯¹æ•°æ®
+    // swapTimeså®šä¹‰äº†æ•°ç»„çš„æ— åºç¨‹åº¦:
+    // swapTimes == 0 æ—¶, æ•°ç»„å®Œå…¨æœ‰åº
+    // swapTimes è¶Šå¤§, æ•°ç»„è¶Šè¶‹å‘äºæ— åº
     public static int[] generateNearlyOrderedArray(int n, int swapTimes){
 
         int[] arr = new int[n];

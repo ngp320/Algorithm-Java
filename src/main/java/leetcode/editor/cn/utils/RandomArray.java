@@ -4,13 +4,13 @@ package leetcode.editor.cn.utils;
  * @ClassName: RandomArray
  * @Description: TODO
  * @Version:
- * @Author: 唐浩
+ * @Author: 鍞愭旦
  * @Date: 2021/7/29 13:47
  */
 public class RandomArray {
     RandomArray() {
     }
-    // 生成有n个元素的随机数组,每个元素的随机范围为[rangeL, rangeR]
+    // 鐢熸垚鏈塶涓厓绱犵殑闅忔満鏁扮粍,姣忎釜鍏冪礌鐨勯殢鏈鸿寖鍥翠负[rangeL, rangeR]
     private static int[] generateRandomArray(int n, int rangeL, int rangeR) {
         assert rangeL <= rangeR;
         int[] arr = new int[n];

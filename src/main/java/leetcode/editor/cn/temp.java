@@ -7,8 +7,8 @@ import java.util.Arrays;
 /**
  * @ClassName: temp
  * @Description: TODO
- * @Version: SVN°æ±¾ºÅ
- * @Author: ÌÆºÆ
+ * @Version:
+ * @Author: å”æµ©
  * @Date: 2021/7/19 11:31
  */
 class Solution {
@@ -16,20 +16,20 @@ class Solution {
 
         Comparable[]aux= Arrays.copyOfRange(arr,l,r+1);
 
-        // ³õÊ¼»¯£¬iÖ¸Ïò×ó°ë²¿·ÖµÄÆğÊ¼Ë÷ÒıÎ»ÖÃl£»jÖ¸ÏòÓÒ°ë²¿·ÖÆğÊ¼Ë÷ÒıÎ»ÖÃmid+1
+        // åˆå§‹åŒ–ï¼ŒiæŒ‡å‘å·¦åŠéƒ¨åˆ†çš„èµ·å§‹ç´¢å¼•ä½ç½®lï¼›jæŒ‡å‘å³åŠéƒ¨åˆ†èµ·å§‹ç´¢å¼•ä½ç½®mid+1
         int i=l,j=mid+1;
         for(int k=l;k<=r;k++){
 
-            if(i>mid){  // Èç¹û×ó°ë²¿·ÖÔªËØÒÑ¾­È«²¿´¦ÀíÍê±Ï
+            if(i>mid){  // å¦‚æœå·¦åŠéƒ¨åˆ†å…ƒç´ å·²ç»å…¨éƒ¨å¤„ç†å®Œæ¯•
                 arr[k]=aux[j-l];j++;
             }
-            else if(j>r){   // Èç¹ûÓÒ°ë²¿·ÖÔªËØÒÑ¾­È«²¿´¦ÀíÍê±Ï
+            else if(j>r){   // å¦‚æœå³åŠéƒ¨åˆ†å…ƒç´ å·²ç»å…¨éƒ¨å¤„ç†å®Œæ¯•
                 arr[k]=aux[i-l];i++;
             }
-            else if(aux[i-l].compareTo(aux[j-l])< 0){  // ×ó°ë²¿·ÖËùÖ¸ÔªËØ < ÓÒ°ë²¿·ÖËùÖ¸ÔªËØ
+            else if(aux[i-l].compareTo(aux[j-l])< 0){  // å·¦åŠéƒ¨åˆ†æ‰€æŒ‡å…ƒç´  < å³åŠéƒ¨åˆ†æ‰€æŒ‡å…ƒç´ 
                 arr[k]=aux[i-l];i++;
             }
-            else{  // ×ó°ë²¿·ÖËùÖ¸ÔªËØ >= ÓÒ°ë²¿·ÖËùÖ¸ÔªËØ
+            else{  // å·¦åŠéƒ¨åˆ†æ‰€æŒ‡å…ƒç´  >= å³åŠéƒ¨åˆ†æ‰€æŒ‡å…ƒç´ 
                 arr[k]=aux[j-l];j++;
             }
         }

@@ -4,7 +4,7 @@ package leetcode.editor.cn.sort;
  * @ClassName: insertSort
  * @Description: TODO
  * @Version:
- * @Author: ÌÆºÆ
+ * @Author: å”æµ©
  * @Date: 2021/7/27 17:29
  */
 public class InsertSort {
@@ -12,15 +12,15 @@ public class InsertSort {
         for (int i = left+1; i <= right ; ++i) {
             int value = arr[i];
             int j = i - 1;
-            // ²éÕÒ²åÈëµÄÎ»ÖÃ
+            // æŸ¥æ‰¾æ’å…¥çš„ä½ç½®
             for (; j >= left; --j) {
                 if (arr[j] > value) {
-                    arr[j+1] = arr[j];  // Êı¾İÒÆ¶¯
+                    arr[j+1] = arr[j];  // æ•°æ®ç§»åŠ¨
                 } else {
                     break;
                 }
             }
-            arr[j+1] = value; // ²åÈëÊı¾İ
+            arr[j+1] = value; // æ’å…¥æ•°æ®
         }
     }
 }

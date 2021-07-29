@@ -6,15 +6,15 @@ import java.lang.reflect.Method;
  * @ClassName: asfdasd123
  * @Description: TODO
  * @Version:
- * @Author: ÌÆºÆ
+ * @Author: å”æµ©
  * @Date: 2021/7/28 16:11
  */
 public class SortTestHelper {
 
-    // SortTestHelper²»ÔÊĞí²úÉúÈÎºÎÊµÀı
+    // SortTestHelperä¸å…è®¸äº§ç”Ÿä»»ä½•å®ä¾‹
     private SortTestHelper(){}
 
-    // Éú³ÉÓĞn¸öÔªËØµÄËæ»úÊı×é,Ã¿¸öÔªËØµÄËæ»ú·¶Î§Îª[rangeL, rangeR]
+    // ç”Ÿæˆæœ‰nä¸ªå…ƒç´ çš„éšæœºæ•°ç»„,æ¯ä¸ªå…ƒç´ çš„éšæœºèŒƒå›´ä¸º[rangeL, rangeR]
     public static int[] generateRandomArray(int n, int rangeL, int rangeR) {
 
         assert rangeL <= rangeR;
@@ -28,11 +28,11 @@ public class SortTestHelper {
         return arr;
     }
 
-    // Éú³ÉÒ»¸ö½üºõÓĞĞòµÄÊı×é
-    // Ê×ÏÈÉú³ÉÒ»¸öº¬ÓĞ[0...n-1]µÄÍêÈ«ÓĞĞòÊı×é, Ö®ºóËæ»ú½»»»swapTimes¶ÔÊı¾İ
-    // swapTimes¶¨ÒåÁËÊı×éµÄÎŞĞò³Ì¶È:
-    // swapTimes == 0 Ê±, Êı×éÍêÈ«ÓĞĞò
-    // swapTimes Ô½´ó, Êı×éÔ½Ç÷ÏòÓÚÎŞĞò
+    // ç”Ÿæˆä¸€ä¸ªè¿‘ä¹æœ‰åºçš„æ•°ç»„
+    // é¦–å…ˆç”Ÿæˆä¸€ä¸ªå«æœ‰[0...n-1]çš„å®Œå…¨æœ‰åºæ•°ç»„, ä¹‹åéšæœºäº¤æ¢swapTimeså¯¹æ•°æ®
+    // swapTimeså®šä¹‰äº†æ•°ç»„çš„æ— åºç¨‹åº¦:
+    // swapTimes == 0 æ—¶, æ•°ç»„å®Œå…¨æœ‰åº
+    // swapTimes è¶Šå¤§, æ•°ç»„è¶Šè¶‹å‘äºæ— åº
     public static int[] generateNearlyOrderedArray(int n, int swapTimes){
 
         int[] arr = new int[n];
@@ -51,7 +51,7 @@ public class SortTestHelper {
         return arr;
     }
 
-    // ´òÓ¡arrÊı×éµÄËùÓĞÄÚÈİ
+    // æ‰“å°arræ•°ç»„çš„æ‰€æœ‰å†…å®¹
     public static void printArray(int[] arr) {
 
         for (int i = 0; i < arr.length; i++){
@@ -62,7 +62,7 @@ public class SortTestHelper {
 
         return;
     }
-    // ÅĞ¶ÏarrÊı×éÊÇ·ñÓĞĞò
+    // åˆ¤æ–­arræ•°ç»„æ˜¯å¦æœ‰åº
     public static boolean isSorted(int[] arr){
 
         for( int i = 0 ; i < arr.length - 1 ; i ++ ) {

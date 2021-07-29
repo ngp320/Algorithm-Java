@@ -5,7 +5,7 @@ import java.util.Collections;
 
 /**
  * @ClassName: BitOperation
- * @Author: ÌÆºÆ
+ * @Author: å”æµ©
  * @Date: 2021/7/23 11:15
  */
 public class BitOperation_reflect {
@@ -20,21 +20,21 @@ public class BitOperation_reflect {
 
     public static void main(String[] args) throws IllegalAccessException {
         BitOperation_reflect bitOperation_reflect = new BitOperation_reflect();
-        // ·´Éä»ñÈ¡×Ö¶Î
+        // åå°„è·å–å­—æ®µ
         Field[] fields = bitOperation_reflect.getClass().getDeclaredFields();
         for (Field field : fields) {
             System.out.println(field.getName());
 
-            // ÔÙÊ¹ÓÃ·´ÉäÔÙ°Ñ bi_* ÖµÈ¡³öÀ´
+            // å†ä½¿ç”¨åå°„å†æŠŠ bi_* å€¼å–å‡ºæ¥
             Object bi_ = field.get(bitOperation_reflect);
             System.out.println(bi_.toString());
             System.out.println(Integer.toBinaryString((Integer) bi_));
-            // ÓÉÓÚname³ÉÔ±±äÁ¿ÊÇprivate, ËùÒÔĞèÒª½øĞĞ·ÃÎÊÈ¨ÏŞÉè¶¨
+            // ç”±äºnameæˆå‘˜å˜é‡æ˜¯private, æ‰€ä»¥éœ€è¦è¿›è¡Œè®¿é—®æƒé™è®¾å®š
             //field.setAccessible(true);
             System.out.println(bitOperation_reflect.getClass().isAssignableFrom(BitOperation_reflect.class));
-            // Ê¹ÓÃ·´Éä½øĞĞ¸³Öµ
-            //ÚÀ.............. ºÃÏñ²»Ì«ĞĞ, Ñ§Ò»Ñ§ moocÍøÊÓÆµ Ö®ºóÔÙ»ØÀ´
-            field.set(bitOperation_reflect, "ÄãºÃ");
+            // ä½¿ç”¨åå°„è¿›è¡Œèµ‹å€¼
+            //è¯¶.............. å¥½åƒä¸å¤ªè¡Œ, å­¦ä¸€å­¦ moocç½‘è§†é¢‘ ä¹‹åå†å›æ¥
+            field.set(bitOperation_reflect, "ä½ å¥½");
             System.out.println(String.join("", Collections.nCopies(32, "-")));
         }
 

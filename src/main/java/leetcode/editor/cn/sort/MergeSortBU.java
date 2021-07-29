@@ -8,23 +8,23 @@ import static leetcode.editor.cn.sort.MergeSort.merge;
  * @ClassName: MergeSortD2U
  * @Description: MergeSort Buttom Up
  * @Version:
- * @Author: ÌÆºÆ
+ * @Author: å”æµ©
  * @Date: 2021/7/29 9:42
  */
 public class MergeSortBU {
-    //×Ôµ×ÏòÉÏ µÄ ¹é²¢ÅÅĞò, ´úÂëÁ¿³öÆæµÄÉÙ
+    //è‡ªåº•å‘ä¸Š çš„ å½’å¹¶æ’åº, ä»£ç é‡å‡ºå¥‡çš„å°‘
     static void mergeSortBU(int[] arr, int n) {
 
         for (int sz = 1; sz <= n; sz += sz) {
             for (int i = 0; i + sz < n; i += sz + sz){
-                //¶Ôarr[i...i+sz-1] ºÍarr[i+sz...i+2*sz-1] ½øĞĞ¹é²¢
-                //(i + sz) ±£Ö¤ (i + sz - 1) ²»Ô½½ç
-                //min(i + sz + sz - 1, n - 1) ±£Ö¤ (i + sz + sz - 1) ²»Ô½½ç
+                //å¯¹arr[i...i+sz-1] å’Œarr[i+sz...i+2*sz-1] è¿›è¡Œå½’å¹¶
+                //(i + sz) ä¿è¯ (i + sz - 1) ä¸è¶Šç•Œ
+                //min(i + sz + sz - 1, n - 1) ä¿è¯ (i + sz + sz - 1) ä¸è¶Šç•Œ
                 merge(arr, i, i + sz - 1, min(i + sz + sz - 1, n - 1));
             }
         }
     }
-    //×Ôµ×ÏòÉÏ µÄ ¹é²¢ÅÅĞò, ´úÂëÁ¿³öÆæµÄÉÙ
+    //è‡ªåº•å‘ä¸Š çš„ å½’å¹¶æ’åº, ä»£ç é‡å‡ºå¥‡çš„å°‘
     static void mergeSortBUPlus(int[] arr, int n) {
 
         for (int sz = 1; sz <= n; sz += sz) {
@@ -32,9 +32,9 @@ public class MergeSortBU {
                 if (min(i + sz + sz - 1, n - 1) - (i) <= 7) {
                     insertionSort_timeGeekBang(arr, i, min(i + sz + sz - 1, n - 1));
                 }else {
-                    //¶Ôarr[i...i+sz-1] ºÍarr[i+sz...i+2*sz-1] ½øĞĞ¹é²¢
-                    //(i + sz) ±£Ö¤ (i + sz - 1) ²»Ô½½ç
-                    //min(i + sz + sz - 1, n - 1) ±£Ö¤ (i + sz + sz - 1) ²»Ô½½ç
+                    //å¯¹arr[i...i+sz-1] å’Œarr[i+sz...i+2*sz-1] è¿›è¡Œå½’å¹¶
+                    //(i + sz) ä¿è¯ (i + sz - 1) ä¸è¶Šç•Œ
+                    //min(i + sz + sz - 1, n - 1) ä¿è¯ (i + sz + sz - 1) ä¸è¶Šç•Œ
                     merge(arr, i, i + sz - 1, min(i + sz + sz - 1, n - 1));
                 }
             }

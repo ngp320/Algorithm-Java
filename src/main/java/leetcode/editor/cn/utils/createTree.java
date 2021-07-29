@@ -7,37 +7,37 @@ import java.util.concurrent.LinkedBlockingQueue;
  * @ClassName: afasdf
  * @Description: TODO
  * @Version:
- * @Author: ÌÆºÆ
+ * @Author: å”æµ©
  * @Date: 2021/7/28 16:36
  */
 public class createTree {
-    //×Ö·û´®Éú³É¶ş²æÊ÷
+    //å­—ç¬¦ä¸²ç”ŸæˆäºŒå‰æ ‘
     public static TreeNode createTree(String str){
         if (str==null) {
             return null;
         }
-        String substring = str.substring(1, str.length() - 1);//ÆşÍ·È¥Î²
+        String substring = str.substring(1, str.length() - 1);//æå¤´å»å°¾
         if (substring.length()==0) {
             return null;
         }
-        String[] split = substring.split(",");//°´ÕÕ¶ººÅ·Ö¸î
-        TreeNode root = split[0].equals("null")?null:new TreeNode(Integer.parseInt(split[0]));//Ê÷µÄroot½Úµã
-        Queue<TreeNode> queue = new LinkedBlockingQueue<>(); //¹ã¶ÈÓÅÏÈµÄ¸¨Öú¶ÓÁĞ
+        String[] split = substring.split(",");//æŒ‰ç…§é€—å·åˆ†å‰²
+        TreeNode root = split[0].equals("null")?null:new TreeNode(Integer.parseInt(split[0]));//æ ‘çš„rootèŠ‚ç‚¹
+        Queue<TreeNode> queue = new LinkedBlockingQueue<>(); //å¹¿åº¦ä¼˜å…ˆçš„è¾…åŠ©é˜Ÿåˆ—
         queue.add(root);
-        int index = 1;//Êı×éµÄË÷ÒıÏÂ±ê
+        int index = 1;//æ•°ç»„çš„ç´¢å¼•ä¸‹æ ‡
         while (!queue.isEmpty()){
             TreeNode cur = queue.poll();
-            if (index<split.length){//Èç¹ûÏÂ±êÔ½½ç¾ÍÌø³öwhileÑ­»·
+            if (index<split.length){//å¦‚æœä¸‹æ ‡è¶Šç•Œå°±è·³å‡ºwhileå¾ªç¯
                 cur.left = split[index].equals("null")?null:new TreeNode(Integer.parseInt(split[index]));
                 index++;
-                if (cur.left!=null){//Èç¹û½ÚµãÊÇnull ¾Í²»·ÅÈË¶ÓÁĞ
+                if (cur.left!=null){//å¦‚æœèŠ‚ç‚¹æ˜¯null å°±ä¸æ”¾äººé˜Ÿåˆ—
                     queue.add(cur.left);
                 }
             }else {break;}
-            if (index<split.length){//Èç¹ûÏÂ±êÔ½½ç¾ÍÌø³öwhileÑ­»·
+            if (index<split.length){//å¦‚æœä¸‹æ ‡è¶Šç•Œå°±è·³å‡ºwhileå¾ªç¯
                 cur.right= split[index].equals("null")?null:new TreeNode(Integer.parseInt(split[index]));
                 index++;
-                if (cur.right!=null){//Èç¹û½ÚµãÊÇnull ¾Í²»·ÅÈË¶ÓÁĞ
+                if (cur.right!=null){//å¦‚æœèŠ‚ç‚¹æ˜¯null å°±ä¸æ”¾äººé˜Ÿåˆ—
                     queue.add(cur.right);
                 }
             }else {break;}

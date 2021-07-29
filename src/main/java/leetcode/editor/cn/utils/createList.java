@@ -1,7 +1,7 @@
 package leetcode.editor.cn.utils;
 
 public class createList {
-    //×Ö·û´®Éú³ÉÁ´±í
+    //å­—ç¬¦ä¸²ç”Ÿæˆé“¾è¡¨
     public static ListNode createList(String str) {
         if (str == null) {
             return null;

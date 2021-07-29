@@ -35,18 +35,19 @@
 // Related Topics 递归 链表
 // 👍 1788 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.linkList;
 
 import leetcode.editor.cn.utils.ListNode;
-import leetcode.editor.cn.utils.Utils;
+
+import static leetcode.editor.cn.utils.createList.createList;
 
 //Java：Merge Two Sorted Lists
 class P21MergeTwoSortedLists {
     public static void main(String[] args) {
         Solution solution = new P21MergeTwoSortedLists().new Solution();
         // TO TEST
-        ListNode l1 = Utils.createList("[1,2,4]");
-        ListNode l2 = Utils.createList("[1,3,4]");
+        ListNode l1 = createList("[1,2,4]");
+        ListNode l2 = createList("[1,3,4]");
         solution.mergeTwoLists(l1, l2);
         System.out.println();
     }

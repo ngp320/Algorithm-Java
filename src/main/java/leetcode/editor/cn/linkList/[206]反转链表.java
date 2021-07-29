@@ -42,18 +42,19 @@
 // Related Topics 递归 链表
 // 👍 1827 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.linkList;
 
 
 import leetcode.editor.cn.utils.ListNode;
-import leetcode.editor.cn.utils.Utils;
+
+import static leetcode.editor.cn.utils.createList.createList;
 
 //Java：反转链表
 class P206ReverseLinkedList{
     public static void main(String[] args) {
         Solution solution = new P206ReverseLinkedList().new Solution();
         // TO TEST
-        ListNode list = Utils.createList("[1,2,3,4,5]");
+        ListNode list = createList("[1,2,3,4,5]");
         solution.reverseList(list);
         System.out.println();
     }

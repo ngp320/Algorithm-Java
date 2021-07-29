@@ -3,24 +3,14 @@ package leetcode.editor.cn.utils;
 import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class Utils {
-    //字符串生成链表
-    public static ListNode createList(String str){
-        if (str==null) {
-            return null;
-        }
-        String substring = str.substring(1, str.length() - 1);
-        if (substring.length()==0)return null;
-        String[] split = substring.split(",");
-        ListNode root = new ListNode(-1);
-        ListNode temp = root;
-        for (String s : split) {
-            ListNode next = new ListNode(Integer.parseInt(s));
-            temp.next = next;
-            temp = next;
-        }
-        return root.next;
-    }
+/**
+ * @ClassName: afasdf
+ * @Description: TODO
+ * @Version:
+ * @Author: 唐浩
+ * @Date: 2021/7/28 16:36
+ */
+public class createTree {
     //字符串生成二叉树
     public static TreeNode createTree(String str){
         if (str==null) {
@@ -53,26 +43,5 @@ public class Utils {
             }else {break;}
         }
         return root;
-    }
-    //生成一个随机数组
-    public static int[] generateRandomArray(int arrLength) {
-        int[] arr = new int[arrLength];
-        int randomNumber = (int) (Math.random() * 1000 + 1);//随机1-1000的整数
-        for (int i = 0; i < arrLength; i++) {
-            arr[i] = randomNumber;
-            randomNumber = (int) (Math.random() * 1000 + 1);
-        }
-        //printArr(arr);
-        return arr;
-    }
-
-    public static void printArray(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            if (i == arr.length - 1) {
-                System.out.println(arr[i]);
-            } else {
-                System.out.print(arr[i] + ",");
-            }
-        }
     }
 }

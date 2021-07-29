@@ -1,45 +1,48 @@
 
 //Given the head of a linked list, return the list after sorting it in ascending
-// order. 
+// order.
 //
 // Follow up: Can you sort the linked list in O(n logn) time and O(1) memory (i.
-//e. constant space)? 
+//e. constant space)?
 //
-// 
-// Example 1: 
 //
-// 
+// Example 1:
+//
+//
 //Input: head = [4,2,1,3]
 //Output: [1,2,3,4]
-// 
 //
-// Example 2: 
 //
-// 
+// Example 2:
+//
+//
 //Input: head = [-1,5,3,4,0]
 //Output: [-1,0,3,4,5]
-// 
 //
-// Example 3: 
 //
-// 
+// Example 3:
+//
+//
 //Input: head = []
 //Output: []
-// 
 //
-// 
-// Constraints: 
 //
-// 
-// The number of nodes in the list is in the range [0, 5 * 104]. 
-// -105 <= Node.val <= 105 
-// 
-// Related Topics 链表 双指针 分治 排序 归并排序 
+//
+// Constraints:
+//
+//
+// The number of nodes in the list is in the range [0, 5 * 104].
+// -105 <= Node.val <= 105
+//
+// Related Topics 链表 双指针 分治 排序 归并排序
 // 👍 1233 👎 0
 
 package leetcode.editor.cn;
+
+import leetcode.editor.cn.utils.ListNode;
+
 //Java：Sort List
-public class P148SortList{
+ class P148SortList{
     public static void main(String[] args) {
         Solution solution = new P148SortList().new Solution();
         // TO TEST
@@ -57,7 +60,7 @@ public class P148SortList{
  */
 class Solution {
     public ListNode sortList(ListNode head) {
-
+        return new ListNode(1);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

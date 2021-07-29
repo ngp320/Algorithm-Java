@@ -39,17 +39,18 @@
 // Related Topics 链表 双指针
 // 👍 1446 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.linkList;
 
 import leetcode.editor.cn.utils.ListNode;
-import leetcode.editor.cn.utils.Utils;
+
+import static leetcode.editor.cn.utils.createList.createList;
 
 //Java：Remove Nth Node From End of List
  class P19RemoveNthNodeFromEndOfList{
     public static void main(String[] args) {
         Solution solution = new P19RemoveNthNodeFromEndOfList().new Solution();
         // TO TEST
-        ListNode l1 = Utils.createList("[1,2,3,4,5,6]");
+        ListNode l1 =  createList("[1,2,3,4,5,6]");
         solution.removeNthFromEnd(l1, 2);
         System.out.println();
     }

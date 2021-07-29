@@ -5,13 +5,22 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 /**
- * ¾É°æ±¾Í³¼ÆÊ±¼ä
- * ĞÂ°æ±¾Ôö¼Ó ===³¤¶È±íÊ¾Ê±¼ä³¤¶È
+ * é…åˆ Timerä½¿ç”¨, ä½¿ç”¨æ–¹å¼å¦‚ä¸‹, æ‰“å° ä½¿ç”¨æ—¶é—´.
+ * ä½†æ˜¯ä¸èƒ½æ£€æµ‹ arræ˜¯å¦æœ‰åº
+ *     @Timer
+ *     void shellSortTest() {
+ *         int[] arr = generateRandomArray(100000);
+ *         sort(arr);
+ *     }
+ *     public static void main(String[] args) {
+ *         TimerUtil timerUtil = new TimerUtil();
+ *         timerUtil.getTime();
+ *     }
  */
 public class TimerUtil {
 
     public void getTime() {
-        // »ñÈ¡µ±Ç°ÀàĞÍÃû×Ö
+        // è·å–å½“å‰ç±»å‹åå­—
         String className = Thread.currentThread().getStackTrace()[2].getClassName();
         System.out.println("current className(expected): " + className);
         try {
@@ -19,11 +28,11 @@ public class TimerUtil {
             Object obj = c.newInstance();
             Method[] methods = c.getDeclaredMethods();
             for (Method m : methods) {
-                // ÅĞ¶Ï¸Ã·½·¨ÊÇ·ñ°üº¬Timer×¢½â
+                // åˆ¤æ–­è¯¥æ–¹æ³•æ˜¯å¦åŒ…å«Timeræ³¨è§£
                 if (m.isAnnotationPresent(Timer.class)) {
                     m.setAccessible(true);
                     long start = System.currentTimeMillis();
-                    // Ö´ĞĞ¸Ã·½·¨
+                    // æ‰§è¡Œè¯¥æ–¹æ³•
                     m.invoke(obj);
                     long end = System.currentTimeMillis();
                     System.out.println(m.getName() + "() time consumed: " + String.valueOf(end - start) + "ms");

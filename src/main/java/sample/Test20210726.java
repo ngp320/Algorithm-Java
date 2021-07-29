@@ -2,11 +2,10 @@ package sample;
 
 import leetcode.editor.cn.utils.Timer;
 
-import static leetcode.editor.cn.utils.Utils.*;
 
 /**
  * @ClassName: Test20210726
- * @Description: TODO
+ * @Description:
  * @Version: SVN°æ±¾ºÅ
  * @Author: ÌÆºÆ
  * @Date: 2021/7/26 16:55

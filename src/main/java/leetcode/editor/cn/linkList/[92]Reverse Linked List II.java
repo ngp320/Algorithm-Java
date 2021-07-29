@@ -32,17 +32,18 @@
 //Follow up: Could you do it in one pass? Related Topics 链表
 // 👍 943 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.linkList;
 
 import leetcode.editor.cn.utils.ListNode;
-import leetcode.editor.cn.utils.Utils;
+
+import static leetcode.editor.cn.utils.createList.createList;
 
 //Java：Reverse Linked List II
  class P92ReverseLinkedListIi{
     public static void main(String[] args) {
         Solution solution = new P92ReverseLinkedListIi().new Solution();
         // TO TEST
-        ListNode list = Utils.createList("[1]");
+        ListNode list =  createList("[1]");
         solution.reverseBetween(list, 1,1);
         System.out.println();
     }

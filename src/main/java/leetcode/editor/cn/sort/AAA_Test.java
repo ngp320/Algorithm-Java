@@ -22,10 +22,9 @@ import static leetcode.editor.cn.utils.SortTestHelper.*;
  */
 public class AAA_Test {
     //在 TimerUtil中, 添加一个 obj.t_isSorted(obj.arr)
-    private static int N = 100000;
+    private static int N = 50000;
     private static int[] arrOrigin = generateRandomArray(N, 0, N);
     //int[] arrOrigin = generateNearlyOrderedArray(N, 10);
-
 
     @Timer
     void mergeSortTest() throws Exception {

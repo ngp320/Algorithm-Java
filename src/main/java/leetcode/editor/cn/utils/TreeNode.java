@@ -2,9 +2,9 @@ package leetcode.editor.cn.utils;
 
 /**
  * @ClassName: ListNode
- * @Description: TODO
- * @Version: SVN°æ±¾ºÅ
- * @Author: ÌÆºÆ
+ * @Description:
+ * @Version: SVNç‰ˆæœ¬å·
+ * @Author: å”æµ©
  * @Date: 2021/7/8 13:43
  */
 public class TreeNode {

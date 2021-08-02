@@ -1,6 +1,5 @@
 package sample;
 
-import leetcode.editor.cn.utils.Timer;
 
 
 /**

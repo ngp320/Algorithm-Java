@@ -2,6 +2,20 @@ package leetcode.editor.cn.utils;
 
 public class createList {
     //字符串生成链表
+    public static ListNode createRandomNumberLinkList(int N, int rangeL, int rangeR) {
+        assert rangeL <= rangeR;
+        ListNode dummy = new ListNode(-1);
+        ListNode cur = dummy;
+        for (int i = 0; i < N; i++) {
+            int randomNum = (int)(Math.random() * (rangeR - rangeL + 1) + rangeL);
+            ListNode next = new ListNode(randomNum);
+            cur.next = next;
+            cur = next;
+        }
+        return dummy.next;
+    }
+
+    //字符串生成链表
     public static ListNode createList(String str) {
         if (str == null) {
             return null;
@@ -11,14 +25,14 @@ public class createList {
             return null;
         }
         String[] split = substring.split(",");
-        ListNode root = new ListNode(-1);
-        ListNode temp = root;
+        ListNode dummy = new ListNode(-1);
+        ListNode cur = dummy;
         for (String s : split) {
             ListNode next = new ListNode(Integer.parseInt(s));
-            temp.next = next;
-            temp = next;
+            cur.next = next;
+            cur = next;
         }
-        return root.next;
+        return dummy.next;
     }
 
 

@@ -2,7 +2,7 @@ package leetcode.editor.cn.utils;
 
 /**
  * @ClassName: RandomArray
- * @Description: TODO
+ * @Description:
  * @Version:
  * @Author: 唐浩
  * @Date: 2021/7/29 13:47

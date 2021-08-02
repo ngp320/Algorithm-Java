@@ -2,7 +2,7 @@ package leetcode.editor.cn.utils;
 
 /**
  * @ClassName: ListNode
- * @Description: TODO
+ * @Description:
  * @Version:
  * @Author: 唐浩
  * @Date: 2021/7/8 13:43

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/reflect/TimerUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/sample/BitOperation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/sample/BitOperation_reflect.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/sample/Test.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/sample/Test20210730.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/sort/AAASortTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/sort/InsertSort.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/sort/MergeSort.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/sort/MergeSortBU.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/sort/ShellSort.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/temp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/ListNode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/RandomArray.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/SortTestHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/Swap.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/TreeNode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/createList.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/createTree.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/generateArray.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/isSorted.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/utils/printArray.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,6 +1,5 @@
-package sample;
+package leetcode.editor.cn.sample;
 
-import java.lang.reflect.Field;
 import java.util.Collections;
 
 /**

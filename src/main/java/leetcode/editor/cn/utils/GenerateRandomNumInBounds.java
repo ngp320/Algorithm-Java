@@ -2,7 +2,7 @@ package leetcode.editor.cn.utils;
 
 /**
  * @ClassName: GenerateRandomNumInBounds
- * @Description: TODO
+ * @Description:
  * @Version:
  * @Author: 唐浩
  * @Date: 2021/8/2 11:42

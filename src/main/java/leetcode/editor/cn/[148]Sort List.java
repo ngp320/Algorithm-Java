@@ -39,7 +39,7 @@
 
 package leetcode.editor.cn;
 
-import leetcode.editor.cn.utils.ListNode;
+import leetcode.editor.cn.ngp1848diy.utils.ListNode;
 
 //Java：Sort List
  class P148SortList{

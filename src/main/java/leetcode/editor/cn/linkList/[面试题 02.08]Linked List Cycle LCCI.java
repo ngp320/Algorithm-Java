@@ -30,7 +30,7 @@
 
 package leetcode.editor.cn.linkList;
 
-import leetcode.editor.cn.utils.ListNode;
+import leetcode.editor.cn.ngp1848diy.utils.ListNode;
 
 //Java：Linked List Cycle LCCI
  class  LinkedListCycle {

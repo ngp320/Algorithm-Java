@@ -37,9 +37,9 @@
 
 package leetcode.editor.cn.linkList;
 
-import leetcode.editor.cn.utils.ListNode;
+import leetcode.editor.cn.ngp1848diy.utils.ListNode;
 
-import static leetcode.editor.cn.utils.createList.createList;
+import static leetcode.editor.cn.ngp1848diy.utils.createList.createList;
 
 //Java：Merge Two Sorted Lists
 class P21MergeTwoSortedLists {

@@ -75,11 +75,27 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[215]Kth Largest Element in an Array.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[215]Kth Largest Element in an Array.java" />
+              <option name="questionId" value="215" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[912]Sort an Array.java">
           <value>
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[912]Sort an Array.java" />
               <option name="questionId" value="948" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[剑指 Offer 51]数组中的逆序对  LCOF.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/[剑指 Offer 51]数组中的逆序对  LCOF.java" />
+              <option name="questionId" value="100318" />
             </LeetcodeEditor>
           </value>
         </entry>

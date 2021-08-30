@@ -1,6 +1,4 @@
 
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 a
 1src/main/java/leetcode/editor/cn/translation.json,e\7\e71ec0582e7ad69d64d4390083fad5cd575e727b
 B
@@ -33,3 +31,7 @@ L
 .idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
+p
+@src/main/java/leetcode/editor/cn/ngp1848diy/sort/InsertSort.java,e\5\e5903609116c9932892de4839626da06a9e52d88
+q
+Asrc/main/java/leetcode/editor/cn/ngp1848diy/sort/MergeSortBU.java,4\d\4df3083b5472c62b7cb4e67ad9a3dc0e87dcd838

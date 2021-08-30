@@ -65,7 +65,7 @@ public class QuickSort {
     }
 
     // O(NlogN) 证明比较复杂, 暂不考虑
-    // AdaptToOrderedArray
+    // 随机选取标定值, 防止快排遇到近乎有序的数组时退化到 O(n^2)
     public static void quickSortPlusPlus(int[] arr, int l, int r) {
         if (r - l <= 7) {
             insertionSortTimeGeekBang(arr, l, r);
@@ -99,6 +99,8 @@ public class QuickSort {
     }
 
     // AdaptTo RepeatArray
+    // 双路快排, 利用从两边开始快排, 平均把重复元素放到数组两头.
+    // 解决, 分治时 由于有大量重复元素, 分出的两部分数组, 大小差距非常大, 退化到 O(n^2)
     public static void quickSort2Ways(int[] arr, int l, int r) {
         if (r - l <= 7) {
             insertionSortTimeGeekBang(arr, l, r);
@@ -147,6 +149,7 @@ public class QuickSort {
     //三路快速排序处理arr[l...r]
     //将arr[l...r]分为<V ; ==V ; >V三部分
     //之后递归对<V ; >V两部分继续进行三路快速排序
+    // 把重复元素, 放到中间, 相对于双路快排效率更高一点,
     public static void quickSort3Ways(int[] arr, int l, int r) {
         if (r - l <= 7) {
             insertionSortTimeGeekBang(arr, l, r);
@@ -164,20 +167,22 @@ public class QuickSort {
         // lt+1 = l+1 = i = l+1  //       即==V部分, 初始化为空
         int i = l + 1;         // arr[lt+1...i)== M
 
-        // 过程如图  https://gitee.com/ngp320/pic/tree/master/algorithm_java/quickSort3Ways_how.png
+        // 过程如图  见https://www.yuque.com/_ngp/blog/yvok04/
         while (i < gt) {
             if (arr[i] < val) {
                 swap(arr, i, lt + 1);
                 i++;
                 lt++;
             } else if (arr[i] > val) {
+                // 此处 i 不需要动, 因为经过 swap处理, i依然指向了一个未被处理的元素.
                 swap(arr, i, gt - 1);
+                gt--;
             } else {
                 i++;
             }
         }
         swap(arr, l, lt);
-        // 单次处理结束后, 如图 https://gitee.com/ngp320/pic/tree/master/algorithm_java/quickSort3Ways_res.png
+        // 单次处理结束后, 如图  见https://www.yuque.com/_ngp/blog/yvok04/
         quickSort2Ways(arr, l, lt - 1);
         quickSort2Ways(arr, gt, r);
     }

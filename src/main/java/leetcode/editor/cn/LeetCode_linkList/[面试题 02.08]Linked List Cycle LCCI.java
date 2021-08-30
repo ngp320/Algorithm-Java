@@ -28,7 +28,7 @@
 // Related Topics 哈希表 链表 双指针
 // 👍 78 👎 0
 
-package leetcode.editor.cn.linkList;
+package leetcode.editor.cn.LeetCode_linkList;
 
 import leetcode.editor.cn.ngp1848diy.utils.ListNode;
 

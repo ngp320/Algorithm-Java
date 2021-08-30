@@ -10,6 +10,8 @@ import leetcode.editor.cn.ngp1848diy.utils.ListNode;
  * @Date: 2021/7/30 14:12
  */
 public class MergeSortBULinkList {
+    // 特点: 自底向上, 适合链表.
+
     public static ListNode mergeSortBULinkList(ListNode head) {
         // 保存head, 因为下面遍历长度会移动head
         //哨兵节点, 省去头结点特殊判断等操作

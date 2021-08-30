@@ -111,6 +111,7 @@ public class AAASortTest {
 
     @Timer(order = 103)
     void shellSort3hAdd1Test() throws ngpException {
+
         int[] arr = Arrays.copyOf(ARRAY_ORIGIN, N);
         shellSort3hAdd1(arr);
         if (!isArraySorted(arr)) {
@@ -120,19 +121,19 @@ public class AAASortTest {
         }
     }
 
-    //递归实现, 容易Stackoverflow, 尤其是退化到O(n^2)的情况
-    //近乎有序的数组, 快排实在过于容易 stackoverflow, 故注释普通快排
-    //-Xmx3550m -Xms3550m -Xss3500m 可以暂时解决 stackoverflow 问题
-    @Timer(order = 209)
-    void quickSortTest() throws ngpException {
-        int[] arr = Arrays.copyOf(ARRAY_ORIGIN, N);
-        quickSort(arr, 0, arr.length - 1);
-        if (!isArraySorted(arr)) {
-            String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
-            printArray(arr);
-            throw new ngpException(methodName + EXCEPTION_END_STR);
-        }
-    }
+    ////递归实现, 容易Stackoverflow, 尤其是退化到O(n^2)的情况
+    ////近乎有序的数组, 快排实在过于容易 stackoverflow, 故注释普通快排
+    ////-Xmx3550m -Xms3550m -Xss3500m 可以暂时解决 stackoverflow 问题
+    //@Timer(order = 209)
+    //void quickSortTest() throws ngpException {
+    //    int[] arr = Arrays.copyOf(ARRAY_ORIGIN, N);
+    //    quickSort(arr, 0, arr.length - 1);
+    //    if (!isArraySorted(arr)) {
+    //        String methodName = Thread.currentThread().getStackTrace()[1].getMethodName();
+    //        printArray(arr);
+    //        throw new ngpException(methodName + EXCEPTION_END_STR);
+    //    }
+    //}
 
 
     @Timer(order = 210)
@@ -167,7 +168,7 @@ public class AAASortTest {
             throw new ngpException(methodName + EXCEPTION_END_STR);
         }
     }
-    // 卡这了?
+
     @Timer(order = 213)
     void quickSort3WaysTest() throws ngpException {
         int[] arr = Arrays.copyOf(ARRAY_ORIGIN, N);
@@ -195,12 +196,12 @@ public class AAASortTest {
     }
 
     private static final String EXCEPTION_END_STR = " sort fail";
-    private static final int N = 50;                           //可以用于调试
-    //private static final int N = 65536;
-    private static final int[] ARRAY_ORIGIN = generateRepeatArray(N, 0, 10); //大量重复元素
+    //private static final int N = 10;                           //可以用于调试
+    private static final int N = 65536;
+    private static final int[] ARRAY_ORIGIN = generateRepeatArray(N, 0, 5); //大量重复元素
     //private static final int[] ARRAY_ORIGIN = generateRandomArray(N, 0, N);
-    //private static int[] ARRAY_ORIGIN = generateNearlyOrderedArrayReverse(N, 0);
-    //private static int[] ARRAY_ORIGIN = generateNearlyOrderedArray(N, 0);
+    //private static int[] ARRAY_ORIGIN = generateNearlyOrderedArrayReverse(N, 1);
+    //private static int[] ARRAY_ORIGIN = generateNearlyOrderedArray(N, 1);
 
 
     public static void main(String[] args) {

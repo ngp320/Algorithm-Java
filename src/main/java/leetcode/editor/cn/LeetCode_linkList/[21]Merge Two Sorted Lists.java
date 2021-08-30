@@ -35,7 +35,7 @@
 // Related Topics 递归 链表
 // 👍 1788 👎 0
 
-package leetcode.editor.cn.linkList;
+package leetcode.editor.cn.LeetCode_linkList;
 
 import leetcode.editor.cn.ngp1848diy.utils.ListNode;
 

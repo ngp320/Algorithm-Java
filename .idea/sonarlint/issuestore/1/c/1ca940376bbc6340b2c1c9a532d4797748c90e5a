@@ -1,0 +1,10 @@
+
+g	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«ÒÉÇ
+Y	java:S125€"<This block of commented-out lines of code should be removed.(ÿ¿–Á8µùÆ¤·/
+G
+java:S1172½"0Remove this unused method parameter "swapTimes".(«ÒÉÇ
+^	java:S125Ê"<This block of commented-out lines of code should be removed.(»ç…Çùÿÿÿÿ8ßÈ¤·/
+T	java:S106Ñ"9Replace this use of System.out or System.err by a logger.(ù–×Öþÿÿÿÿ
+T	java:S106Ó"9Replace this use of System.out or System.err by a logger.(Øÿ©ßüÿÿÿÿ
+T	java:S106Ô"9Replace this use of System.out or System.err by a logger.(°¤Ã‡úÿÿÿÿ
+T	java:S106Õ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
